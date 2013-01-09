@@ -1,0 +1,11 @@
+# Turn on AcceptPathInfo
+AcceptPathInfo On
+
+# Turn on URL rewriting
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^dowdlefolkart.com$ [NC]
+RewriteRule ^(.*)$ http://www.dowdlefolkart.com/$1 [R=301,L]
+
+# Installation directory
+RewriteBase /
